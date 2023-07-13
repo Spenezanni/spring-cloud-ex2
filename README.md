@@ -1,5 +1,11 @@
 # spring-cloud-ex2
-Project spring-cloud-ex2
+Project Spring-Cloud-Ex2
+
+Step 1: to upload the project 
+  - Sequence:
+    eureka-server
+    api-gateway
+    other microservice (it's not necessary an order)
 
 This is a Spring Boot microservice project, it's using Eureka-Server and Gateway.
 
