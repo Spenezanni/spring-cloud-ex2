@@ -1,16 +1,20 @@
 server:
-  port: 8081
+  port: 8765
 
 spring:
   application:
     name: api-gateway
   cloud:
     gateway:
-      routes:
+     discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+     routes:
       - id: ms-worker
-        uri: https://8081
+        uri: http://localhost:8761/eureka
         predicates:
-        - Path=/get 
+        - Path=/ms-worker/**
 eureka:
   client:
     register-with-eureka: true
