@@ -4,12 +4,12 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka
+      
 server:
-  port: 8000
+  port: 8100
 spring:
   application:
-    name: ms-kafka-producer
+    name: ms-kafka-consumer
   kafka:
     producer:
       bootstrap-servers: localhost:29092
- 

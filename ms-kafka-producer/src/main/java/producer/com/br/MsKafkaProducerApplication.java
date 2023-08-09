@@ -9,5 +9,5 @@ public class MsKafkaProducerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MsKafkaProducerApplication.class, args);
 	}
-
+	
 }
