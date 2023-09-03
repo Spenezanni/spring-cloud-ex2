@@ -11,7 +11,11 @@ spring:
           enabled: true
           lower-case-service-id: true
      routes:
-      - id: ms-worker
+      - id: ms-oauth
+        uri: http://localhost:8761/eureka
+        predicates:
+        - Path=/ms-oauth/**
+      - id: ms-oauth
         uri: http://localhost:8761/eureka
         predicates:
         - Path=/ms-worker/**
