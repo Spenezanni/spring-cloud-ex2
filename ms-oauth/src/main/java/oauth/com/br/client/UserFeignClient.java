@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import oauth.com.br.domain.model.User;
 
-
-
 @Component	
 @FeignClient(name = "ms-user", path = "/users")
 public interface UserFeignClient {
