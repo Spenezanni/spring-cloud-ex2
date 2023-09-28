@@ -23,6 +23,10 @@ spring:
         uri: http://localhost:8761/eureka
         predicates:
         - Path=/ms-user/**
+      - id: ms-oauth
+        uri: http://localhost:8761/eureka
+        predicates:
+        - Path=/ms-payment/**   
 eureka:
   client:
     register-with-eureka: true
